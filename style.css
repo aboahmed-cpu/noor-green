@@ -288,7 +288,201 @@ color: #4b5b4b;
 font-size: 16px;
 margin-bottom: 0;
 }
+/* =========================
+   PRODUCT CARDS
+   ========================= */
 
+.products-section {
+  max-width: 1100px;
+  text-align: center;
+  padding: 60px 25px;
+}
+
+.products-grid {
+  max-width: 950px;
+  margin: 35px auto 50px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+
+  align-items: stretch;
+}
+
+.product-card,
+.packing-card {
+  background: #ffffff;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #d9e8dc;
+}
+
+.product-card {
+  text-align: left;
+}
+
+.product-card > img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+
+  display: block;
+
+  margin: 0;
+  border-radius: 0;
+}
+
+.product-content {
+  padding: 25px;
+}
+
+.product-badge {
+  display: inline-block;
+
+  background: #e8f5eb;
+  color: #0b5d3b;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+.product-content h3 {
+  color: #0b5d3b;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.product-details div {
+  background: #f5f9f5;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e0ebe2;
+}
+
+.product-details strong {
+  display: block;
+
+  color: #315b25;
+
+  font-size: 13px;
+
+  margin-bottom: 3px;
+}
+
+.product-details span {
+  color: #444444;
+
+  font-size: 14px;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.product-actions .button {
+  margin: 5px 3px 0 0;
+}
+
+.product-whatsapp {
+  background: #25a65a;
+}
+
+.product-whatsapp:hover {
+  background: #087f3f;
+}
+
+
+/* =========================
+   PACKING CARD
+   ========================= */
+
+.packing-card {
+  padding: 30px 25px;
+
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.packing-card h3 {
+  color: #0b5d3b;
+
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.packing-card p {
+  color: #555555;
+
+  font-size: 16px;
+}
+
+.packing-card ul {
+  margin: 10px 0 25px;
+
+  padding-left: 20px;
+}
+
+.packing-card li {
+  color: #444444;
+
+  font-size: 15px;
+
+  margin-bottom: 10px;
+}
+
+.packing-card .button {
+  text-align: center;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* =========================
+   GALLERY TITLE
+   ========================= */
+
+.gallery-title {
+  color: #0b5d3b;
+
+  font-size: 26px;
+
+  margin: 25px 0;
+}
 /* =========================
 GALLERY
 ========================= */
