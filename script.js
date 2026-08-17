@@ -1,23 +1,882 @@
-// NOOR GREEN
-// Website interactions
+<!DOCTYPE html>
+<html lang="en">
 
-document.addEventListener("DOMContentLoaded", function () {
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  // Smooth navigation
-  const links = document.querySelectorAll('a[href^="#"]');
+  <title>NOOR GREEN | Egyptian Sweet Potatoes Exporter</title>
 
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      const target = document.querySelector(this.getAttribute("href"));
+  <meta name="description"
+    content="NOOR GREEN is an Egyptian sweet potato exporter supplying premium fresh sweet potatoes, carefully selected, sorted and professionally packed for international markets worldwide.">
 
-      if (target) {
-        event.preventDefault();
+  <meta name="robots" content="index, follow">
 
-        target.scrollIntoView({
-          behavior: "smooth"
-        });
-      }
-    });
-  });
+  <link rel="canonical" href="https://aboahmed-cpu.github.io/noor-green/">
 
-});
+  <meta property="og:title" content="NOOR GREEN | Egyptian Sweet Potatoes">
+  <meta property="og:description"
+    content="Premium Egyptian sweet potatoes, carefully selected, sorted and professionally packed for international markets.">
+  <meta property="og:url" content="https://aboahmed-cpu.github.io/noor-green/">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NOOR GREEN",
+    "url": "https://aboahmed-cpu.github.io/noor-green/",
+    "description": "Egyptian sweet potato exporter and supplier providing premium fresh sweet potatoes to international markets.",
+    "email": "alrwsh51@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Motobas",
+      "addressRegion": "Kafr El Sheikh",
+      "addressCountry": "EG"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+     ========================= -->
+
+<nav>
+
+  <div class="brand">
+    <h1>NOOR GREEN</h1>
+    <span>Egyptian Sweet Potatoes</span>
+  </div>
+
+  <div class="nav-links">
+
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#gallery">Products</a>
+    <a href="#quality">Quality</a>
+    <a href="#specifications">Specifications</a>
+    <a href="#contact">Contact</a>
+
+    <a
+      class="nav-whatsapp"
+      href="https://wa.me/201092670167"
+      target="_blank"
+      rel="noopener noreferrer">
+      WhatsApp
+    </a>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+     ========================= -->
+
+<section class="hero" id="home">
+
+  <img
+    src="https://i.postimg.cc/yN1dSwjd/file-00000000658081f4828455e4869cd61f.png"
+    alt="Fresh Egyptian sweet potatoes for export - NOOR GREEN">
+
+  <h2>NOOR GREEN</h2>
+
+  <h3>Egyptian Sweet Potatoes</h3>
+
+  <p>
+    Premium Egyptian sweet potatoes, carefully selected,
+    sorted and packed for export worldwide.
+  </p>
+
+  <p>
+    <strong>
+      Export Quality • Professional Packing • Worldwide Supply
+    </strong>
+  </p>
+
+  <div>
+
+    <a class="button" href="#contact">
+      Contact Us
+    </a>
+
+    <a
+      class="button"
+      href="https://wa.me/201092670167"
+      target="_blank"
+      rel="noopener noreferrer">
+      WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+     ========================= -->
+
+<section id="about">
+
+  <img
+    src="https://i.postimg.cc/F7DRLKTF/1785619568043.png"
+    alt="Premium Egyptian sweet potatoes supplied by NOOR GREEN">
+
+  <h2>About NOOR GREEN</h2>
+
+  <p>
+    NOOR GREEN is an Egyptian company specialized in
+    supplying high-quality sweet potatoes for international markets.
+  </p>
+
+  <p>
+    We focus on quality, careful selection, sorting and
+    professional packing to meet export requirements.
+  </p>
+
+</section>
+
+
+<!-- =========================
+     QUALITY INFO
+     ========================= -->
+
+<div class="quality-info">
+
+  <div>
+    <h3>Premium Quality</h3>
+    <p>
+      Carefully selected Egyptian sweet potatoes prepared
+      for international markets.
+    </p>
+  </div>
+
+  <div>
+    <h3>Professional Packing</h3>
+    <p>
+      Sorted and professionally packed to meet export requirements.
+    </p>
+  </div>
+
+  <div>
+    <h3>Worldwide Export</h3>
+    <p>
+      Ready for reliable export and delivery to international buyers.
+    </p>
+  </div>
+
+</div>
+
+
+<!-- =========================
+     QUALITY
+     ========================= -->
+
+<section id="quality">
+
+  <img
+    src="https://i.postimg.cc/fJBL9b87/20-10-92670167-20260501-191614.jpg"
+    alt="NOOR GREEN sweet potato quality and export packing">
+
+  <p class="section-label">
+    NOOR GREEN
+  </p>
+
+  <h2>
+    Commercial &amp; Product Specifications
+  </h2>
+
+  <p class="section-intro">
+    Premium fresh Egyptian sweet potatoes, carefully selected,
+    sorted and professionally packed for international buyers
+    and export markets.
+  </p>
+
+  <div class="specs-grid">
+
+    <div class="spec-card">
+      <span>🌱</span>
+      <h3>Product</h3>
+      <p>Fresh Egyptian Sweet Potatoes</p>
+    </div>
+
+    <div class="spec-card">
+      <span>🇪🇬</span>
+      <h3>Origin</h3>
+      <p>Egypt</p>
+    </div>
+
+    <div class="spec-card">
+      <span>⭐</span>
+      <h3>Quality</h3>
+      <p>Export Quality • Class I</p>
+    </div>
+
+    <div class="spec-card">
+      <span>📦</span>
+      <h3>Packing</h3>
+      <p>Professional Export Packing</p>
+    </div>
+
+    <div class="spec-card">
+      <span>🔎</span>
+      <h3>Selection</h3>
+      <p>Carefully Selected &amp; Sorted</p>
+    </div>
+
+    <div class="spec-card">
+      <span>🌍</span>
+      <h3>Market</h3>
+      <p>International Export Supply</p>
+    </div>
+
+  </div>
+
+  <h2>Our Quality</h2>
+
+  <p>
+    Carefully selected Egyptian sweet potatoes with
+    professional sorting and packing for export.
+  </p>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS & PACKING
+     ========================= -->
+
+<section id="gallery" class="products-section">
+
+  <p class="section-label">NOOR GREEN</p>
+
+  <h2>Our Products &amp; Export Packing</h2>
+
+  <p class="section-intro">
+    Premium Egyptian sweet potatoes prepared for international
+    buyers with professional export packing and flexible specifications.
+  </p>
+
+
+  <div class="products-grid">
+
+
+    <!-- =========================
+         PRODUCT CARD
+         ========================= -->
+
+    <div class="product-card">
+
+      <img
+        src="https://i.postimg.cc/VdD6CNK8/Alibaba1948264441-original.png"
+        alt="Premium Egyptian sweet potatoes for export">
+
+      <div class="product-content">
+
+        <span class="product-badge">
+          Export Quality
+        </span>
+
+        <h3>
+          Egyptian Sweet Potatoes
+        </h3>
+
+        <p class="product-description">
+          Fresh Egyptian sweet potatoes, carefully selected,
+          sorted and prepared for international export markets.
+        </p>
+
+
+        <div class="product-details">
+
+          <div>
+            <strong>🇪🇬 Origin</strong>
+            <span>Egypt</span>
+          </div>
+
+          <div>
+            <strong>⭐ Quality</strong>
+            <span>Class I</span>
+          </div>
+
+          <div>
+            <strong>📏 Size</strong>
+            <span>45–75 mm</span>
+          </div>
+
+          <div>
+            <strong>📦 Packing</strong>
+            <span>10 / 15 / 20 / 25 kg</span>
+          </div>
+
+          <div>
+            <strong>🚢 Minimum Order</strong>
+            <span>12–15 MT</span>
+          </div>
+
+          <div>
+            <strong>🌍 Supply</strong>
+            <span>Worldwide</span>
+          </div>
+
+        </div>
+
+
+        <div class="product-actions">
+
+          <a
+            class="button"
+            href="#inquiry"
+            onclick="selectProduct('Egyptian Sweet Potatoes - Export Quality')">
+            Request a Quote
+          </a>
+
+          <a
+            class="button product-whatsapp"
+            href="https://wa.me/201092670167?text=Hello%20NOOR%20GREEN,%20I%20am%20interested%20in%20your%20Egyptian%20sweet%20potatoes."
+            target="_blank"
+            rel="noopener noreferrer">
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PACKING OPTIONS
+         ========================= -->
+
+    <div class="packing-card">
+
+      <h3>
+        📦 Export Packing Options
+      </h3>
+
+      <p>
+        We can provide different packing solutions according
+        to buyer requirements and destination market.
+      </p>
+
+      <ul>
+
+        <li>Mesh Bags — 10 / 15 / 20 / 25 kg</li>
+
+        <li>Cartons — 5 / 10 kg</li>
+
+        <li>Jumbo Bags — 1 MT</li>
+
+        <li>Custom Packaging Available</li>
+
+      </ul>
+
+      <a
+        class="button"
+        href="#inquiry"
+        onclick="selectProduct('Egyptian Sweet Potatoes - Export Quality')">
+        Request Packing Details
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       PRODUCT GALLERY
+       ========================= -->
+
+  <h3 class="gallery-title">
+    Product &amp; Packing Gallery
+  </h3>
+
+  <div class="gallery">
+
+    <img
+      src="https://i.postimg.cc/VdD6CNK8/Alibaba1948264441-original.png"
+      alt="Fresh Egyptian sweet potatoes - NOOR GREEN">
+
+    <img
+      src="https://i.postimg.cc/VdD6CNKz/FB-IMG-1783942716665.jpg"
+      alt="Premium Egyptian sweet potatoes for export">
+
+    <img
+      src="https://i.postimg.cc/vc3BVm0W/IMG-20260516-WA0026.jpg"
+      alt="Sweet potatoes packing">
+
+    <img
+      src="https://i.postimg.cc/fJBL9b8c/IMG-20260516-WA0028.jpg"
+      alt="Egyptian sweet potatoes prepared for export">
+
+    <img
+      src="https://i.postimg.cc/QH0tTMfk/IMG-20260517-WA0000.jpg"
+      alt="NOOR GREEN Egyptian sweet potato products">
+
+    <img
+      src="https://i.postimg.cc/w70vmBwN/IMG-20260518-WA0077.jpg"
+      alt="Fresh Egyptian sweet potatoes for international markets">
+
+    <img
+      src="https://i.postimg.cc/hfpjdG2T/IMG-20260518-WA0078.jpg"
+      alt="Fresh Egyptian sweet potatoes for international markets">
+
+    <img
+      src="https://i.postimg.cc/SJDsMKgM/IMG-20260518-WA0079.jpg"
+      alt="Egyptian sweet potatoes professional export packing">
+
+    <img
+      src="https://i.postimg.cc/MvdTQG9j/IMG-20260518-WA0080.jpg"
+      alt="NOOR GREEN Egyptian sweet potatoes export">
+
+    <img
+      src="https://i.postimg.cc/7fm62LKb/IMG-20260518-WA0083.jpg"
+      alt="Fresh Egyptian sweet potatoes for export">
+
+    <img
+      src="https://i.postimg.cc/0bcQwNVK/IMG-20260518-WA0085.jpg"
+      alt="Premium Egyptian sweet potatoes - NOOR GREEN">
+
+    <img
+      src="https://i.postimg.cc/QH0tTMfx/IMG-20260725-WA0011.jpg"
+      alt="NOOR GREEN fresh sweet potato products">
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SPECIFICATIONS TABLE
+     ========================= -->
+
+<section id="specifications" class="specifications">
+
+  <div class="container">
+
+    <h2>Export Specifications</h2>
+
+    <p class="section-subtitle">
+      Our sweet potatoes are available in different sizes,
+      packaging options, and quantities to meet international
+      export requirements.
+    </p>
+
+    <div class="specs-table">
+
+      <div class="spec-row">
+        <span>Size</span>
+        <span>
+          45–75 mm standard + customized sizes
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Package Weights</span>
+        <span>
+          10 / 15 / 20 / 25 kg — Cartons: 5 / 10 kg —
+          Jumbo: 1 MT
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Packaging</span>
+        <span>
+          Mesh bags — Cartons — Jumbo bags —
+          Custom packaging available
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Season</span>
+        <span>
+          February–June / September–December +
+          Year-round availability subject to stock
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Organic / Conventional</span>
+        <span>
+          Both available — Conventional in larger quantities
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Minimum Order</span>
+        <span>
+          Usually 20 ft container (≈12–15 MT)
+        </span>
+      </div>
+
+      <div class="spec-row">
+        <span>Smaller Quantities</span>
+        <span>
+          Available with additional cost
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+     ========================= -->
+
+<section class="contact" id="contact">
+
+  <h2>Contact NOOR GREEN</h2>
+
+  <p class="contact-intro">
+    For inquiries, orders and export information,
+    please contact NOOR GREEN directly by WhatsApp or email.
+  </p>
+
+  <div class="contact-box">
+
+    <div class="contact-item">
+
+      <h3>WhatsApp</h3>
+
+      <p>
+        +20 109 267 0167
+      </p>
+
+      <h3>Email</h3>
+
+      <p>
+        <a href="mailto:alrwsh51@gmail.com">
+          alrwsh51@gmail.com
+        </a>
+      </p>
+
+      <h3>Location</h3>
+
+      <p>
+        Motobas Industrial Zone,
+        Motobas, Kafr El Sheikh, Egypt
+      </p>
+
+      <a
+        class="button"
+        href="https://wa.me/201092670167"
+        target="_blank"
+        rel="noopener noreferrer">
+        Chat on WhatsApp
+      </a>
+
+    </div>
+
+
+    <div class="contact-item">
+
+      <h3>Export Supply</h3>
+
+      <p>
+        Fresh Egyptian Sweet Potatoes<br>
+        Professional Export Packing<br>
+        Worldwide Supply
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     EXPORT INQUIRY
+     ========================= -->
+
+<section id="inquiry" class="inquiry">
+
+  <p class="section-label">
+    NOOR GREEN
+  </p>
+
+  <h2>
+    Request an Export Quote
+  </h2>
+
+  <p class="section-intro">
+    Tell us your requirements and NOOR GREEN will contact you
+    directly with export details.
+  </p>
+
+
+  <form onsubmit="sendInquiry(event)">
+
+    <!-- CUSTOMER NAME -->
+
+    <input
+      id="inqName"
+      type="text"
+      placeholder="Your Name"
+      required>
+
+
+    <!-- COMPANY -->
+
+    <input
+      id="inqCompany"
+      type="text"
+      placeholder="Company Name"
+      required>
+
+
+    <!-- COUNTRY -->
+
+    <input
+      id="inqCountry"
+      type="text"
+      placeholder="Destination Country"
+      required>
+
+
+    <!-- EMAIL -->
+
+    <input
+      id="inqEmail"
+      type="email"
+      placeholder="Business Email Address"
+      required>
+
+
+    <!-- PRODUCT -->
+
+    <select id="inqProduct" required>
+
+      <option value="">
+        Select Product
+      </option>
+
+      <option value="Egyptian Sweet Potatoes - Export Quality">
+        Egyptian Sweet Potatoes - Export Quality
+      </option>
+
+    </select>
+
+
+    <!-- QUANTITY -->
+
+    <input
+      id="inqQuantity"
+      type="number"
+      min="1"
+      step="0.5"
+      placeholder="Required Quantity (MT)"
+      required>
+
+
+    <!-- SIZE -->
+
+    <select id="inqSize" required>
+
+      <option value="">
+        Select Size
+      </option>
+
+      <option value="45–55 mm">
+        45–55 mm
+      </option>
+
+      <option value="55–65 mm">
+        55–65 mm
+      </option>
+
+      <option value="65–75 mm">
+        65–75 mm
+      </option>
+
+      <option value="45–75 mm Standard">
+        45–75 mm Standard
+      </option>
+
+      <option value="Customized Size">
+        Customized Size
+      </option>
+
+    </select>
+
+
+    <!-- PACKING -->
+
+    <select id="inqPacking" required>
+
+      <option value="">
+        Select Preferred Packing
+      </option>
+
+      <option value="Mesh Bags - 10 kg">
+        Mesh Bags - 10 kg
+      </option>
+
+      <option value="Mesh Bags - 15 kg">
+        Mesh Bags - 15 kg
+      </option>
+
+      <option value="Mesh Bags - 20 kg">
+        Mesh Bags - 20 kg
+      </option>
+
+      <option value="Mesh Bags - 25 kg">
+        Mesh Bags - 25 kg
+      </option>
+
+      <option value="Cartons - 5 kg">
+        Cartons - 5 kg
+      </option>
+
+      <option value="Cartons - 10 kg">
+        Cartons - 10 kg
+      </option>
+
+      <option value="Jumbo Bags - 1 MT">
+        Jumbo Bags - 1 MT
+      </option>
+
+      <option value="Custom Packaging">
+        Custom Packaging
+      </option>
+
+    </select>
+
+
+    <!-- MESSAGE -->
+
+    <textarea
+      id="inqMessage"
+      placeholder="Additional Requirements"></textarea>
+
+
+    <!-- SUBMIT -->
+
+    <button type="submit">
+      Send Quote Request via WhatsApp
+    </button>
+
+  </form>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+  <p>
+    © 2026 NOOR GREEN - Egyptian Sweet Potatoes
+  </p>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP INQUIRY SCRIPT
+     ========================= -->
+
+<script>
+
+function selectProduct(productName) {
+
+  const productSelect =
+    document.getElementById("inqProduct");
+
+  if (productSelect) {
+    productSelect.value = productName;
+  }
+
+}
+
+
+function sendInquiry(event) {
+
+  event.preventDefault();
+
+
+  const name =
+    document.getElementById("inqName").value.trim();
+
+
+  const company =
+    document.getElementById("inqCompany").value.trim();
+
+
+  const country =
+    document.getElementById("inqCountry").value.trim();
+
+
+  const email =
+    document.getElementById("inqEmail").value.trim();
+
+
+  const product =
+    document.getElementById("inqProduct").value;
+
+
+  const quantity =
+    document.getElementById("inqQuantity").value.trim();
+
+
+  const size =
+    document.getElementById("inqSize").value;
+
+
+  const packing =
+    document.getElementById("inqPacking").value;
+
+
+  const message =
+    document.getElementById("inqMessage").value.trim();
+
+
+  const text =
+`Hello NOOR GREEN,
+
+I would like to request an export quotation.
+
+Name: ${name}
+Company: ${company}
+Destination Country: ${country}
+Business Email: ${email}
+
+Product: ${product}
+Required Quantity: ${quantity} MT
+Preferred Size: ${size}
+Preferred Packing: ${packing}
+
+Additional Requirements:
+${message}
+
+Thank you.`;
+
+
+  window.open(
+    "https://wa.me/201092670167?text=" +
+    encodeURIComponent(text),
+    "_blank"
+  );
+
+}
+
+</script>
+
+
+</body>
+</html>
