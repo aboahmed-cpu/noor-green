@@ -455,73 +455,190 @@ alt="NOOR GREEN sweet potato quality and export packing">
 </div>
 
   </div>  </section>  
-  <!-- =========================  
-     EXPORT INQUIRY  
-     ========================= -->  <section id="inquiry" class="inquiry">    <h2>Request an Export Quote</h2>    <p>  
-    Tell us what you need and contact NOOR GREEN directly via WhatsApp.  
-  </p>    <form onsubmit="sendInquiry(event)">  <input  
-  id="inqName"  
-  type="text"  
-  placeholder="Your Name"  
-  required>  
+<!-- =========================
+     EXPORT INQUIRY
+     ========================= -->
 
-<input  
-  id="inqCompany"  
-  type="text"  
-  placeholder="Company Name"  
-  required>  
+<section id="inquiry" class="inquiry">
 
-<input  
-  id="inqCountry"  
-  type="text"  
-  placeholder="Country"  
-  required>  
+  <p class="section-label">NOOR GREEN</p>
 
-<input  
-  id="inqEmail"  
-  type="email"  
-  placeholder="Email Address"  
-  required>  
-<select id="inqProduct" required>
-  <option value="">Select Product</option>
+  <h2>Request an Export Quote</h2>
 
-  <option value="Egyptian Sweet Potatoes - Export Quality">
-    Egyptian Sweet Potatoes - Export Quality
-  </option>
-</select>
-<input  
-  id="inqQuantity"  
-  type="text"  
-  placeholder="Required Quantity (MT)"  
-  required>  
+  <p class="section-intro">
+    Tell us your requirements and contact NOOR GREEN directly
+    for export pricing and availability.
+  </p>
 
-<input  
-  id="inqPacking"  
-  type="text"  
-  placeholder="Preferred Packing">  
+  <form onsubmit="sendInquiry(event)">
 
-<textarea  
-  id="inqMessage"  
-  placeholder="Additional Requirements"></textarea>  
+    <input
+      id="inqName"
+      type="text"
+      placeholder="Your Name"
+      required>
 
-<button type="submit">  
-  Send Inquiry via WhatsApp  
-</button>
-function selectProduct(productName) {
+    <input
+      id="inqCompany"
+      type="text"
+      placeholder="Company Name"
+      required>
+
+    <input
+      id="inqCountry"
+      type="text"
+      placeholder="Destination Country"
+      required>
+
+    <input
+      id="inqEmail"
+      type="email"
+      placeholder="Business Email Address"
+      required>
+
+    <select id="inqProduct" required>
+      <option value="">Select Product</option>
+
+      <option value="Egyptian Sweet Potatoes - Export Quality">
+        Egyptian Sweet Potatoes - Export Quality
+      </option>
+    </select>
+
+    <input
+      id="inqQuantity"
+      type="number"
+      min="1"
+      step="0.5"
+      placeholder="Required Quantity (MT)"
+      required>
+
+    <select id="inqSize" required>
+      <option value="">Select Size</option>
+      <option value="45–55 mm">45–55 mm</option>
+      <option value="55–65 mm">55–65 mm</option>
+      <option value="65–75 mm">65–75 mm</option>
+      <option value="Customized Size">Customized Size</option>
+    </select>
+
+    <select id="inqPacking" required>
+      <option value="">Select Preferred Packing</option>
+      <option value="Mesh Bags - 10 kg">Mesh Bags - 10 kg</option>
+      <option value="Mesh Bags - 15 kg">Mesh Bags - 15 kg</option>
+      <option value="Mesh Bags - 20 kg">Mesh Bags - 20 kg</option>
+      <option value="Mesh Bags - 25 kg">Mesh Bags - 25 kg</option>
+      <option value="Cartons - 5 kg">Cartons - 5 kg</option>
+      <option value="Cartons - 10 kg">Cartons - 10 kg</option>
+      <option value="Jumbo Bags - 1 MT">Jumbo Bags - 1 MT</option>
+      <option value="Custom Packaging">Custom Packaging</option>
+    </select>
+
+    <textarea
+      id="inqMessage"
+      placeholder="Additional Requirements"></textarea>
+
+    <button type="submit">
+      Send Quote Request via WhatsApp
+    </button>
+
+  </form>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+  <p>
+    © 2026 NOOR GREEN - Egyptian Sweet Potatoes
+  </p>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP INQUIRY SCRIPT
+     ========================= -->
+
+<script>
+
+
+
   const productSelect =
     document.getElementById("inqProduct");
 
-  productSelect.value = productName;
+  if (productSelect) {
+    productSelect.value = productName;
+  }
+
 }
-  </form>  </section>  
-  
-  <!-- =========================  
-     FOOTER  
-     ========================= -->  <footer>    <p>  
-    © 2026 NOOR GREEN - Egyptian Sweet Potatoes  
-  </p>  </footer>  <!-- =========================  
-     WHATSAPP INQUIRY SCRIPT  
-     ========================= -->  <script>  
+
+
+function sendInquiry(event) {
+
+  event.preventDefault();
+
+  const name =
+    document.getElementById("inqName").value;
+
+  const company =
+    document.getElementById("inqCompany").value;
+
+  const country =
+    document.getElementById("inqCountry").value;
+
+  const email =
+    document.getElementById("inqEmail").value;
+
+  const product =
+    document.getElementById("inqProduct").value;
+
+  const quantity =
+    document.getElementById("inqQuantity").value;
+
+  const size =
+    document.getElementById("inqSize").value;
+
+  const packing =
+    document.getElementById("inqPacking").value;
+
+  const message =
+    document.getElementById("inqMessage").value;
+
+
+  const text =
+`Hello NOOR GREEN,
+
+I would like to send an export inquiry.
+
+Name: ${name}
+Company: ${company}
+Country: ${country}
+Email: ${email}
+
+Product: ${product}
+Required Quantity: ${quantity} MT
+Preferred Size: ${size}
+Preferred Packing: ${packing}
+
+Additional Requirements:
+${message}`;
+
+
+  window.open(
+    "https://wa.me/201092670167?text=" +
+    encodeURIComponent(text),
+    "_blank"
+  );
+
+}
+
+</script>
+
+</body>
+  </html>  
 function sendInquiry(event) {  
   event.preventDefault();  
   
