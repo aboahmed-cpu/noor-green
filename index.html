@@ -225,12 +225,12 @@ alt="NOOR GREEN sweet potato quality and export packing">
 
         <div class="product-actions">
 
-          <a
-            class="button"
-            href="#inquiry">
-            Request a Quote
-          </a>
-
+<a
+  class="button"
+  href="#inquiry"
+  onclick="selectProduct('Egyptian Sweet Potatoes - Export Quality')">
+  Request a Quote
+</a>
           <a
             class="button product-whatsapp"
             href="https://wa.me/201092670167?text=Hello%20NOOR%20GREEN,%20I%20am%20interested%20in%20your%20Egyptian%20sweet%20potatoes."
@@ -271,11 +271,12 @@ alt="NOOR GREEN sweet potato quality and export packing">
 
       </ul>
 
-      <a
-        class="button"
-        href="#inquiry">
-        Request Packing Details
-      </a>
+  <a
+  class="button"
+  href="#inquiry"
+  onclick="selectProduct('Egyptian Sweet Potatoes - Export Quality')">
+  Request Packing Details
+  </a>
 
     </div>
 
@@ -499,7 +500,12 @@ alt="NOOR GREEN sweet potato quality and export packing">
 <button type="submit">  
   Send Inquiry via WhatsApp  
 </button>
+function selectProduct(productName) {
+  const productSelect =
+    document.getElementById("inqProduct");
 
+  productSelect.value = productName;
+}
   </form>  </section>  <!-- =========================  
      FOOTER  
      ========================= -->  <footer>    <p>  
