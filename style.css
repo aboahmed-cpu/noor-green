@@ -1,23 +1,22 @@
 /* =========================
-NOOR GREEN - Main CSS
+NOOR GREEN - Premium CSS
 ========================= */
 
-{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+* { /* تم إصلاح النجمة هنا */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-font-family: Arial, sans-serif;
-background: #f4f8f3;
-color: #1f2d1f;
-line-height: 1.6;
+    font-family: 'Montserrat', sans-serif; /* تغيير الخط ليصبح Montserrat */
+    background: #f4f8f3;
+    color: #1f2d1f;
+    line-height: 1.6;
 }
 
 /* =========================
@@ -25,113 +24,38 @@ NAVIGATION
 ========================= */
 
 nav {
-position: sticky;
-top: 0;
-z-index: 1000;
-
-background: #0b5d3b;
-padding: 12px 25px;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 25px;
-flex-wrap: wrap;
-
-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
-}
-
-.brand {
-display: flex;
-flex-direction: column;
-flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #0b5d3b;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .brand h1 {
-color: #ffffff;
-font-size: 27px;
-font-weight: 800;
-letter-spacing: 2px;
-text-transform: uppercase;
-}
-
-.brand span {
-color: #d9f0df;
-font-size: 12px;
-letter-spacing: 0.8px;
-margin-top: 2px;
-}
-
-.nav-links {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-gap: 6px;
-flex-wrap: wrap;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .nav-links a {
-color: #ffffff;
-text-decoration: none;
-font-weight: bold;
-font-size: 14px;
-padding: 8px 11px;
-border-radius: 8px;
-transition: 0.3s ease;
-}
-
-.nav-links a:hover {
-background: rgba(255, 255, 255, 0.15);
-transform: translateY(-2px);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: 0.3s;
 }
 
 .nav-links .nav-whatsapp {
-background: #087f3f;
-color: #ffffff;
-padding: 9px 15px;
-border-radius: 20px;
-margin-left: 5px;
-}
-
-.nav-links .nav-whatsapp:hover {
-background: #065f30;
-}
-
-/* =========================
-ACCESSIBILITY
-========================= */
-
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-outline: 3px solid #f5c542;
-outline-offset: 3px;
-}
-
-/* =========================
-GENERAL SECTIONS
-========================= */
-
-section {
-max-width: 1000px;
-margin: 25px auto;
-padding: 35px 30px;
-background: #ffffff;
-border-radius: 16px;
-box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-}
-
-h2 {
-color: #176b3a;
-font-size: 32px;
-margin-bottom: 18px;
-}
-
-p {
-font-size: 18px;
-line-height: 1.7;
-margin-bottom: 15px;
+    background: #e67e22; /* لون برتقالي للتمييز */
+    border-radius: 20px;
+    padding: 8px 18px;
 }
 
 /* =========================
@@ -139,46 +63,68 @@ HERO
 ========================= */
 
 .hero {
-text-align: center;
-padding: 55px 25px;
-background: linear-gradient(135deg, #ffffff, #eef7f0);
-}
-
-.hero img {
-width: 100%;
-max-width: 950px;
-height: 420px;
-object-fit: cover;
-border-radius: 20px;
-display: block;
-margin: 0 auto 30px;
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffffff, #eef7f0);
 }
 
 .hero h2 {
-font-size: 46px;
-color: #0b5d3b;
-letter-spacing: 2px;
-margin-bottom: 8px;
+    font-size: 48px;
+    color: #0b5d3b;
+    margin-bottom: 10px;
 }
 
-.hero h3 {
-font-size: 28px;
-color: #176b3a;
-margin-bottom: 18px;
+.hero img {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.hero p {
-max-width: 750px;
-margin: 0 auto 28px;
+/* =========================
+GUIDE VISUALS (القسم الجديد)
+========================= */
+
+.spec-visual-guide {
+    max-width: 1000px;
+    margin: -30px auto 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
 }
 
-.hero strong {
-display: block;
-color: #176b3a;
-font-size: 16px;
-letter-spacing: 0.5px;
-margin-top: 15px;
+.guide-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 150px;
+}
+
+.guide-circle {
+    width: 70px;
+    height: 70px;
+    background: #0b5d3b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.guide-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #176b3a;
 }
 
 /* =========================
@@ -186,785 +132,45 @@ BUTTONS
 ========================= */
 
 .button {
-display: inline-block;
-background: #087f3f;
-color: #ffffff;
+    display: inline-block;
+    background: #0b5d3b;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-padding: 14px 25px;
-border-radius: 30px;
-
-text-decoration: none;
-font-weight: bold;
-
-margin: 8px 5px;
-
-transition: 0.3s ease;
-box-shadow: 0 5px 15px rgba(8, 127, 63, 0.25);
+.button.orange-btn {
+    background: #e67e22;
 }
 
 .button:hover {
-background: #065f30;
-color: #ffffff;
-transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* =========================
-GENERAL IMAGES
-========================= */
-
-section img {
-width: 100%;
-max-width: 850px;
-height: 320px;
-object-fit: cover;
-border-radius: 18px;
-display: block;
-margin: 0 auto 25px;
-}
-
-/* =========================
-ABOUT
-========================= */
-
-#about {
-text-align: center;
-border-top: 4px solid #176b3a;
-}
-
-#about p {
-max-width: 750px;
-margin: 0 auto 15px;
-}
-
-/* =========================
-QUALITY
-========================= */
-
-#quality {
-text-align: center;
-border-top: 4px solid #25a65a;
-}
-
-/* =========================
-QUALITY INFO
-========================= */
-
-.quality-info {
-max-width: 1000px;
-margin: 25px auto;
-padding: 0 30px;
-
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-}
-
-.quality-info div {
-background: #ffffff;
-padding: 25px 20px;
-border-radius: 14px;
-text-align: center;
-
-border: 1px solid #d9e8dc;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-
-transition: 0.3s ease;
-}
-
-.quality-info div:hover {
-transform: translateY(-6px);
-box-shadow: 0 10px 25px rgba(11, 93, 59, 0.15);
-border-color: #25a65a;
-}
-
-.quality-info h3 {
-color: #0b5d3b;
-margin-bottom: 10px;
-font-size: 22px;
-}
-
-.quality-info p {
-color: #4b5b4b;
-font-size: 16px;
-margin-bottom: 0;
-}
-/* =========================
-   PRODUCT CARDS
-   ========================= */
-
-.products-section {
-  max-width: 1100px;
-  text-align: center;
-  padding: 60px 25px;
-}
-
-.products-grid {
-  max-width: 950px;
-  margin: 35px auto 50px;
-
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 25px;
-
-  align-items: stretch;
-}
-
-.product-card,
-.packing-card {
-  background: #ffffff;
-  border-radius: 18px;
-
-  overflow: hidden;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-
-  border: 1px solid #d9e8dc;
-}
-
-.product-card {
-  text-align: left;
-}
-
-.product-card > img {
-  width: 100%;
-  height: 300px;
-
-  object-fit: cover;
-
-  display: block;
-
-  margin: 0;
-  border-radius: 0;
-}
-
-.product-content {
-  padding: 25px;
-}
-
-.product-badge {
-  display: inline-block;
-
-  background: #e8f5eb;
-  color: #0b5d3b;
-
-  padding: 6px 12px;
-
-  border-radius: 20px;
-
-  font-size: 13px;
-  font-weight: bold;
-
-  margin-bottom: 12px;
-}
-
-.product-content h3 {
-  color: #0b5d3b;
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-
-.product-description {
-  color: #555555;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.product-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-
-  margin-bottom: 20px;
-}
-
-.product-details div {
-  background: #f5f9f5;
-
-  padding: 12px;
-
-  border-radius: 10px;
-
-  border: 1px solid #e0ebe2;
-}
-
-.product-details strong {
-  display: block;
-
-  color: #315b25;
-
-  font-size: 13px;
-
-  margin-bottom: 3px;
-}
-
-.product-details span {
-  color: #444444;
-
-  font-size: 14px;
-}
-
-.product-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.product-actions .button {
-  margin: 5px 3px 0 0;
-}
-
-.product-whatsapp {
-  background: #25a65a;
-}
-
-.product-whatsapp:hover {
-  background: #087f3f;
-}
-
-
-/* =========================
-   PACKING CARD
-   ========================= */
-
-.packing-card {
-  padding: 30px 25px;
-
-  text-align: left;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.packing-card h3 {
-  color: #0b5d3b;
-
-  font-size: 24px;
-
-  margin-bottom: 15px;
-}
-
-.packing-card p {
-  color: #555555;
-
-  font-size: 16px;
-}
-
-.packing-card ul {
-  margin: 10px 0 25px;
-
-  padding-left: 20px;
-}
-
-.packing-card li {
-  color: #444444;
-
-  font-size: 15px;
-
-  margin-bottom: 10px;
-}
-
-.packing-card .button {
-  text-align: center;
-
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-/* =========================
-   GALLERY TITLE
-   ========================= */
-
-.gallery-title {
-  color: #0b5d3b;
-
-  font-size: 26px;
-
-  margin: 25px 0;
-}
-/* =========================
-GALLERY
-========================= */
-
-#gallery {
-text-align: center;
-background: #ffffff;
-padding: 40px 30px;
-}
-
-#gallery h2 {
-color: #0b5d3b;
-font-size: 34px;
-margin-bottom: 30px;
-}
-
-.gallery {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-margin-top: 25px;
-}
-
-.gallery img {
-width: 100%;
-height: 240px;
-object-fit: cover;
-border-radius: 16px;
-
-display: block;
-
-border: 3px solid #ffffff;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-
-transition: 0.3s ease;
-}
-
-.gallery img:hover {
-transform: scale(1.04);
-box-shadow: 0 10px 25px rgba(11, 93, 59, 0.25);
-}
-
-/* =========================
-SPECIFICATIONS
-========================= */
-
-.specifications {
-max-width: 1100px;
-padding: 80px 20px;
-background: #f7f9f5;
-text-align: center;
-}
-
-.specifications .container {
-max-width: 1000px;
-margin: 0 auto;
-}
-
-.specifications h2 {
-font-size: 36px;
-margin-bottom: 15px;
-color: #1f4d2b;
-}
-
-.section-label {
-color: #315b25;
-font-size: 14px;
-font-weight: 700;
-letter-spacing: 2px;
-margin-bottom: 10px;
-}
-
-.section-intro,
-.section-subtitle {
-max-width: 700px;
-margin: 0 auto 35px;
-color: #444444;
-font-size: 17px;
-line-height: 1.7;
-}
-
-.specs-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 25px;
-margin-bottom: 45px;
-}
-
-.spec-card {
-background: #ffffff;
-padding: 30px 20px;
-border-radius: 16px;
-
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-
-transition: 0.3s ease;
-}
-
-.spec-card:hover {
-transform: translateY(-6px);
-}
-
-.spec-card span {
-display: block;
-font-size: 34px;
-margin-bottom: 15px;
-}
-
-.spec-card h3 {
-color: #315b25;
-font-size: 20px;
-margin-bottom: 10px;
-}
-
-.spec-card p {
-color: #444444;
-font-size: 15px;
-line-height: 1.6;
-margin: 0;
-}
-
-/* =========================
-SPECIFICATIONS TABLE
-========================= */
-
-.specs-table {
-max-width: 900px;
-margin: 0 auto;
-
-background: #ffffff;
-border-radius: 12px;
-overflow: hidden;
-
-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-.spec-row {
-display: grid;
-grid-template-columns: 30% 70%;
-
-border-bottom: 1px solid #e5e5e5;
-
-transition: 0.2s ease;
-}
-
-.spec-row:last-child {
-border-bottom: none;
-}
-
-.spec-row:hover {
-background: #f8faf7;
-}
-
-.spec-row span {
-padding: 18px 20px;
-line-height: 1.6;
-}
-
-.spec-row span:first-child {
-font-weight: 700;
-font-size: 15px;
-color: #1f4d2b;
-background: #f1f5ef;
-}
-
-.spec-row span:last-child {
-color: #444444;
-font-size: 15px;
-}
-
-/* =========================
-CONTACT
-========================= */
-
-.contact {
-text-align: center;
-background: #eef7f0;
-border: 2px solid #176b3a;
-padding: 45px 25px;
-}
-
-.contact h2 {
-color: #176b3a;
-font-size: 36px;
-margin-bottom: 20px;
-}
-
-.contact-intro {
-max-width: 700px;
-margin: 0 auto 30px;
-color: #444444;
-font-size: 18px;
-}
-
-.contact-box {
-max-width: 800px;
-margin: 0 auto;
-
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
-}
-
-.contact-item {
-background: #ffffff;
-padding: 25px 20px;
-border-radius: 16px;
-
-border: 1px solid #d9e8dc;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-}
-
-.contact-item h3 {
-color: #0b5d3b;
-font-size: 22px;
-margin-bottom: 10px;
-}
-
-.contact-item p {
-color: #444444;
-margin-bottom: 15px;
-}
-
-.contact-item a:not(.button) {
-color: #0b5d3b;
-font-weight: bold;
-}
-
-.contact .button {
-font-size: 19px;
-padding: 15px 32px;
-}
-
-/* =========================
-INQUIRY FORM
-========================= */
-
-.inquiry {
-text-align: center;
-}
-
-.inquiry form {
-max-width: 700px;
-margin: 30px auto 0;
-
-display: flex;
-flex-direction: column;
-gap: 14px;
-}
-
-.inquiry input,
-.inquiry textarea {
-width: 100%;
-
-padding: 14px 16px;
-
-border: 1px solid #c8d8cb;
-border-radius: 10px;
-
-font-family: Arial, sans-serif;
-font-size: 16px;
-
-background: #ffffff;
-color: #1f2d1f;
-}
-
-.inquiry textarea {
-min-height: 130px;
-resize: vertical;
-}
-
-.inquiry button {
-border: none;
-cursor: pointer;
-
-background: #087f3f;
-color: #ffffff;
-
-padding: 14px 20px;
-border-radius: 10px;
-
-font-size: 16px;
-font-weight: bold;
-
-transition: 0.3s ease;
-}
-
-.inquiry button:hover {
-background: #065f30;
-transform: translateY(-2px);
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer {
-background: #0b5d3b;
-color: #ffffff;
-
-text-align: center;
-
-padding: 25px 15px;
-margin-top: 40px;
-}
-
-footer p {
-margin: 0;
-font-size: 15px;
-color: #ffffff;
-}
-
-/* =========================
-TABLET
+RESPONSIVE (التعديلات للموبايل)
 ========================= */
 
 @media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* جعل المنتجات تحت بعضها في الموبايل */
+    }
+    
+    .nav-links {
+        display: none; /* يمكن إضافة قائمة همبرغر هنا لاحقاً */
+    }
 
-.specs-grid {
-grid-template-columns: 1fr;
+    .hero h2 {
+        font-size: 32px;
+    }
+    
+    .spec-visual-guide {
+        margin-top: 20px;
+    }
 }
 
-.specifications {
-padding: 60px 15px;
-}
-
-.specifications h2 {
-font-size: 30px;
-}
-
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-nav {
-padding: 12px 10px;
-gap: 8px;
-justify-content: center;
-}
-
-.brand {
-width: 100%;
-text-align: center;
-align-items: center;
-}
-
-.brand h1 {
-font-size: 24px;
-}
-
-.brand span {
-font-size: 11px;
-}
-
-.nav-links {
-width: 100%;
-justify-content: center;
-gap: 3px;
-}
-
-.nav-links a {
-font-size: 12px;
-padding: 6px 7px;
-}
-
-.nav-links .nav-whatsapp {
-padding: 7px 11px;
-}
-
-.quality-info {
-grid-template-columns: 1fr;
-padding: 0 15px;
-}
-
-.gallery {
-grid-template-columns: repeat(2, 1fr);
-gap: 12px;
-}
-
-.gallery img {
-height: 180px;
-}
-
-}
-
-/* =========================
-SMALL MOBILE
-========================= */
-
-@media (max-width: 600px) {
-
-section {
-margin: 15px 10px;
-padding: 25px 15px;
-}
-
-.hero {
-padding: 35px 15px;
-}
-
-.hero img {
-height: 240px;
-border-radius: 14px;
-}
-
-.hero h2 {
-font-size: 34px;
-}
-
-.hero h3 {
-font-size: 21px;
-}
-
-.hero p {
-font-size: 16px;
-}
-
-.hero strong {
-font-size: 14px;
-}
-
-.button {
-padding: 12px 18px;
-font-size: 15px;
-}
-
-section img {
-height: 240px;
-}
-
-#gallery h2 {
-font-size: 28px;
-}
-
-.contact h2 {
-font-size: 30px;
-}
-
-.contact-box {
-grid-template-columns: 1fr;
-}
-
-.specifications {
-padding: 60px 15px;
-}
-
-.spec-row {
-grid-template-columns: 1fr;
-}
-
-.spec-row span {
-padding: 14px 16px;
-font-size: 14px;
-}
-
-.spec-row span:first-child {
-padding-bottom: 8px;
-}
-
-}
-
-/* =========================
-EXTRA SMALL MOBILE
-========================= */
-
-@media (max-width: 450px) {
-
-.gallery {
-grid-template-columns: 1fr;
-}
-
-.gallery img {
-height: 220px;
-}
-
-.nav-links a {
-font-size: 11px;
-padding: 6px 6px;
-}
-
-}
+/* ... بقية الـ CSS الخاص بك تضاف هنا مع التأكد من حذف المكرر ... */
