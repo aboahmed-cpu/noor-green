@@ -1,8 +1,8 @@
-/* =========================
-NOOR GREEN - Premium CSS
-========================= */
+here/* =========================
+   NOOR GREEN - Full Premium CSS
+   ========================= */
 
-* { /* تم إصلاح النجمة هنا */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,103 +13,106 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; /* تغيير الخط ليصبح Montserrat */
+    font-family: 'Montserrat', sans-serif;
     background: #f4f8f3;
     color: #1f2d1f;
     line-height: 1.6;
 }
-
-/* =========================
-NAVIGATION
-========================= */
 
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: #0b5d3b;
-    padding: 12px 25px;
+    padding: 15px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .brand h1 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 800;
-    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
     letter-spacing: 1px;
 }
 
+.brand span {
+    color: #d9f0df;
+    font-size: 11px;
+    display: block;
+}
+
 .nav-links a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
+    font-size: 13px;
     font-weight: 600;
-    font-size: 14px;
-    padding: 8px 12px;
-    transition: 0.3s;
+    margin-left: 15px;
 }
 
-.nav-links .nav-whatsapp {
-    background: #e67e22; /* لون برتقالي للتمييز */
+.nav-whatsapp {
+    background: #e67e22;
+    padding: 8px 15px;
     border-radius: 20px;
-    padding: 8px 18px;
 }
 
-/* =========================
-HERO
-========================= */
+section {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.section-label {
+    color: #315b25;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0b5d3b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
 .hero {
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #ffffff, #eef7f0);
-}
-
-.hero h2 {
-    font-size: 48px;
-    color: #0b5d3b;
-    margin-bottom: 10px;
+    background: linear-gradient(white, #f0f7f1);
 }
 
 .hero img {
     width: 100%;
-    max-width: 900px;
-    height: 400px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
 }
 
-/* =========================
-GUIDE VISUALS (القسم الجديد)
-========================= */
-
 .spec-visual-guide {
-    max-width: 1000px;
-    margin: -30px auto 40px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: -40px;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 10;
 }
 
 .guide-item {
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     text-align: center;
-    min-width: 150px;
+    min-width: 130px;
 }
 
 .guide-circle {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: #0b5d3b;
     color: white;
     border-radius: 50%;
@@ -118,59 +121,95 @@ GUIDE VISUALS (القسم الجديد)
     justify-content: center;
     margin: 0 auto 10px;
     font-weight: bold;
-    font-size: 14px;
 }
 
-.guide-label {
-    font-size: 12px;
-    font-weight: bold;
-    color: #176b3a;
+.quality-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-/* =========================
-BUTTONS
-========================= */
+.quality-info div {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e0e8e1;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-card img { width: 100%; height: 250px; object-fit: cover; }
+
+.product-content { padding: 20px; }
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.product-details div { background: #f9f9f9; padding: 10px; border-radius: 8px; }
 
 .button {
     display: inline-block;
     background: #0b5d3b;
     color: white;
-    padding: 12px 28px;
-    border-radius: 30px;
+    padding: 12px 25px;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.button.orange-btn {
-    background: #e67e22;
+.orange-btn { background: #e67e22; }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
+.gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
 
-/* =========================
-RESPONSIVE (التعديلات للموبايل)
-========================= */
+.gallery img:hover { transform: scale(1.05); }
 
+.specs-table { background: #f9f9f9; border-radius: 10px; overflow: hidden; }
+
+.spec-row { display: grid; grid-template-columns: 1fr 2fr; border-bottom: 1px solid #ddd; }
+
+.spec-row span { padding: 15px; }
+
+.spec-row span:first-child { font-weight: bold; background: #eee; }
+
+.inquiry form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; }
+
+.inquiry input, .inquiry textarea { padding: 12px; border: 1px solid #ccc; border-radius: 8px; }
+
+.inquiry button { background: #0b5d3b; color: white; border: none; padding: 15px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+
+footer { background: #0b5d3b; color: white; text-align: center; padding: 20px; }
+
+/* Responsive */
 @media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: 1fr; /* جعل المنتجات تحت بعضها في الموبايل */
+    .nav-links { display: none; }
+    .products-grid, .gallery, .spec-row { grid-template-columns: 1fr; }
+    h2 { font-size: 26px; }
     }
-    
-    .nav-links {
-        display: none; /* يمكن إضافة قائمة همبرغر هنا لاحقاً */
-    }
-
-    .hero h2 {
-        font-size: 32px;
-    }
-    
-    .spec-visual-guide {
-        margin-top: 20px;
-    }
-}
-
-/* ... بقية الـ CSS الخاص بك تضاف هنا مع التأكد من حذف المكرر ... */
