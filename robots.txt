@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://aboahmed-cpu.github.io/noor-green/sitemap.xml
+
+# Allow Google to see images and videos
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
